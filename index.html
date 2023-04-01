@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stark</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+<body class="bo">
+    <nav class="navbar h-nav">
+        <div class="ig"><img class="img1" src="/imgs/scrl.jpg"><p class="logo">Stark</p></div>
+        <ul class="navlist">
+            <li><a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                HOME</a></li>
+            <li><a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                MY EDITS</a></li>
+            <li><a href="songs.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                SONGS PLAYLIST</a></li>
+            <li><a href="#CONTACT">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                CONTACT</a></li>
+        </ul>
+    </nav>
+    <hr>
+  <h1 class="me">About Me</h1>
+  <div class="hi">Hi I am</div>
+<div class="nme"> Lakshay
+<button class="clk" type="button"><a class="btn" href="#btsr">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+    Know me ↡</a></button></div>
+<div class="know">Thank you for taking the time to visit my website, and I hope you enjoy exploring my work!.I am 18yrs old and I'm CS(computer science) student. On this site, you'll find a collection of my best work, as well as a detailed overview of my skills and expertise.I have developed a passion for VIDEO EDITING and WEB DEVELOPMENT. From sharing my knowledge and expertise to connecting with like-minded individuals, I hope to provide value to everyone who visits my site.
+</div>
+<hr class="h">
+<br>
+<div class="iam" id="btsr">Know Me</div>
+<img src="/imgs/shindt.jpg">
+<div class="know2">
+    I have a deep obsession with making money and becoming a billionaire. To me, financial success represents not only the ability to provide for myself and my loved ones. Ultimately, my obsession with making money is fueled by a deep desire to create positive change in the world. I believe that with the right mindset and strategy, I can achieve my goals and make a meaningful impact on the world.
+    <br>
+    <br>
+    <p class="tx">Thank you for stopping by and feel free to explore!</p>
+</div>
+<hr class="hl">
+</body>
+<body class="bod">
+    <div class="contact-box" id="CONTACT">
+    <form class="form" onsubmit="sendemail(); reset(); return false;">
+        <h3>Contact me!</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="emai;" id="email" placeholder="Your Email" required>
+        <input type="text" id="phone" placeholder="Phone no." required>
+        <textarea type="text" rows="4" id="message" placeholder="Your massage"></textarea>
+        <div class="center">
+        <div class="outer button">
+            <button id="sendBtn" class="sps" type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit</button>
+        </div>
+        </div>
+    </form>
+</div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendemail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "starklakshaycoder@gmail.com",
+    Password : "DB0E22B058F18FACA2D057116E4C8266073F",
+    To : 'starklakshaycoder@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Phone ne.: " + document.getElementById("phone").value
+    + "<br> Message: " + document.getElementById("message").value
+
+}).then(
+  message => alert("Message sent succesfully")
+);
+    }
+</script>
+</body>
+</html>
